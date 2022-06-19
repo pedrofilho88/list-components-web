@@ -1,4 +1,3 @@
-import { prototype } from "events"
 import Part from "../core/Part"
 
 
@@ -25,7 +24,7 @@ export default function Table (props: TableProps){
                     </div>
                     <div className={"w-full"} >
                            <h3>Descrição do Produto:</h3>
-                           <h3 className="font-medium" >{part.name}</h3>                      
+                           <h3 className="font-medium" >{part.getName()}</h3>                      
                     </div>
 
                     <div >
@@ -34,27 +33,27 @@ export default function Table (props: TableProps){
                     </div>
                     <div >
                             <span className={'text-left '}>Código 2:</span >
-                            <span className={'text-left pl-2'}> {part.getname()} </span >                            
+                            <span className={'text-left pl-2'}> {part.getName()} </span >                            
                     </div>
                     <div className={"w-full"} >
                            <h3>Descrição do Técnico:</h3>
-                           <h3 className="font-medium" >{part.description}</h3>                      
+                           <h3 className="font-medium" >{part.getDescription()}</h3>                      
                     </div>
                     <div className={"w-full"} >
                            <h3>Modelo:</h3>
-                           <h3 className="font-medium" >{part.model}</h3>                      
+                           <h3 className="font-medium" >{part.getModel()}</h3>                      
                     </div>
                     <div className={"w-full"} >
                            <h3>Descrição do Fabricante:</h3>
-                           <h3 className="font-medium" >{part.fabricatordescription}</h3>                      
+                           <h3 className="font-medium" >{part.getFabricatordescription()}</h3>                      
                     </div>
                     <div className={"w-full"} >
                            <h3>Part Number do Fabricante:</h3>
-                           <h3 className="font-medium" >{part.partnumber}</h3>                      
+                           <h3 className="font-medium" >{part.getParnumber()}</h3>                      
                     </div>
                     <div className={"w-full"} >
                            <h3>Fabricante:</h3>
-                           <h3 className="font-medium" >{part.manufacturer}</h3> 
+                           <h3 className="font-medium" >{part.getManufacturer()}</h3> 
                                                
                     </div>
                 </>
