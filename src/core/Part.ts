@@ -33,11 +33,12 @@ export default class Part {
 public setId(id: string){
     this.id = id;
 }
+
 public getId(){
     return this.id;
 }
     
-public getname() {
+public getName() {
     return this.name;
 }
 public getFabricatordescription(){
@@ -47,7 +48,25 @@ public getParnumber(){
     return this.partnumber;
 }
 
+public getManufacturer(){
+    return this.manufacturer;
+}
 
+public getLocation(){
+    return this.location;
+}
+public getDescription(){
+    return this.description;
+}
+public getModel(){
+    return this.model;
+}
+public getCode1(){
+    return this.code1;
+}
+public getCode2(){
+    return this.code2;
+}
 
 
 }
