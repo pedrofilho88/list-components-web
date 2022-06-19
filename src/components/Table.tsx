@@ -1,6 +1,4 @@
-// import { prototype } from "events"
 import Part from "../core/Part"
-
 
 interface TableProps {
     parts: Part[]
