@@ -1,3 +1,6 @@
+import CaptureImage from '../components/CaptureImage'
+import Form from '../components/Form'
+import Head from '../components/Head'
 import Layout from '../components/Layout'
 import Table from '../components/Table'
 import Part from '../core/Part'
@@ -11,17 +14,43 @@ export default function Home() {
     new Part("4", "fecho", "fecho hidraulico", "axl50s",  "outra", "mais", "qualquer","o que","vixi","acabou"),
   ]
 
-  return (
-    <div className={` 
-    flex font-extrabold  justify-center items-center 
-    bg-gradient-to-tr from-purple-500 via-orange-500 to-orange-500
-    w-full h-full
-    `}>
-        <Layout  title="COMPONENTES" >
-          <Table parts={parts} ></Table>
-        </Layout>
+  return (    
+
+      <div className='pb-60 bg-gradient-to-tr from-purple-500 via-orange-500 to-orange-500' >
+
+     
+     <Form/>      
+           
     </div>
+    
+    
   )
 }
 
 
+
+
+{/* <div className={` 
+    flex font-extrabold  justify-center items-center 
+    bg-gradient-to-tr from-purple-500 via-orange-500 to-orange-500
+    w-full h-full
+    `}>
+        <Head />  
+        
+        {/* <Layout  title="COMPONENTES" >
+          <Table parts={parts} ></Table>
+        </Layout> */}
+
+{/* <label htmlFor="icon-button-file" className='mt-20 mb-10'>          
+            <div
+              color="primary"
+              aria-label="upload picture"
+              // component="span"              
+            >
+    <div className='flex mt-2 items-center justify-center'>
+        <CaptureImage/>
+    </div>
+    </div>
+    </label>
+       
+    </div> */}

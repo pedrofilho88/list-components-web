@@ -1,3 +1,4 @@
+
 import Title from "./Title"
 
 interface LayoutProps {
@@ -7,6 +8,8 @@ interface LayoutProps {
 
 export default function Layout (props: LayoutProps) {
     return(
+    
+       
         <div className={`
             flex flex-col w-11/12 bg-white text-purple-800 text-sm rounded-md
             mt-14 mb-14           
@@ -18,5 +21,6 @@ export default function Layout (props: LayoutProps) {
             </div>
 
         </div>
+        
     )
 }
