@@ -4,13 +4,27 @@ import { useState } from "react"
 export default function CaptureImage(){
   
     const [source, setSource] = useState("");
+
+    const getBase64FromUrl = async (url: RequestInfo | URL) => {
+      const data = await fetch(url);
+      const blob = await data.blob();
+      return new Promise((resolve) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(blob); 
+        reader.onloadend = () => {
+          const base64data = reader.result;   
+          resolve(base64data);
+        }
+      });
+    }
     
     const handleCapture = (target: EventTarget & HTMLInputElement) => {
         if (target.files) {
           if (target.files.length !== 0) {
             const file = target.files[0];
             const newUrl = URL.createObjectURL(file);
-            setSource(newUrl); 
+            setSource(newUrl);
+            getBase64FromUrl(newUrl).then(console.log);            
           }
         }        
       };

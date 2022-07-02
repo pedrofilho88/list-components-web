@@ -2,32 +2,27 @@ export default class Part {
     
     private id: string
     private name: string
-    private fabricatordescription: string
-    private partnumber: string
+    private fabricatordescription?: string
+    private partnumber?: string
     private manufacturer: string
-    private location: string
-    private description: string
+    private location?: string
+    private description?: string
     private model: string
     private code1: string
-    private code2: string
+    private code2?: string
 
 
-    constructor( 
-        id: string, name: string, fabricatordescription: string, partnumber: string,
-        manufacturer: string, location: string, description: string, model: string,
-        code1: string, code2: string        
-    ) {
-
-        this.id = id;
-        this.name = name;
-        this.fabricatordescription = fabricatordescription;
-        this.partnumber = partnumber;
-        this.manufacturer = manufacturer;
-        this.location = location;
-        this.description = description;
-        this.model = model;
-        this.code1 = code1;
-        this.code2 = code2;   
+    constructor( ) {
+        this.id = "";
+        this.name = "";
+        this.fabricatordescription = "";
+        this.partnumber = "";
+        this.manufacturer = "";
+        this.location = "";
+        this.description = "";
+        this.model = "";
+        this.code1 = "";
+        this.code2 = "";   
 }
 
 public setId(id: string){
@@ -68,6 +63,48 @@ public getCode2(){
     return this.code2;
 }
 
+
+public setName(name: string){
+    return this.name = name;
 }
+
+public setFabricatordescription(fabricatordescription: string){
+    return this.fabricatordescription = fabricatordescription;
+}
+
+public setParnumber(partnumber: string){
+    return this.partnumber = partnumber;
+}
+
+public setManufacturer(manufacturer: string){
+    return this.manufacturer = manufacturer;
+}
+
+public setLocation(location: string){
+    return this.location = location;
+}
+
+public setDescription(description: string){
+    return this.description = description;
+}
+
+public setModel(model: string){
+    return this.model = model;
+}
+
+public setCode1(code1: string){
+    return this.code1 = code1;
+}
+
+public setCode2(code2: string){
+    return this.code2 = code2;
+}
+
+
+
+
+
+}
+
 
 
